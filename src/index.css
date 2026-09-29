@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --font-display: 'Fraunces', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-bg: #F5F4FF;
+  --color-surface: #FFFFFF;
+  --color-primary: #6C63FF;
+  --color-primary-light: #EEF0FF;
+  --color-primary-dark: #4F46E5;
+  --color-text: #1A1A2E;
+  --color-muted: #6B7280;
+  --color-border: #E8E7F0;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-danger-light: #FEF2F2;
+  --radius-card: 1rem;
+  --radius-btn: 0.625rem;
+  --shadow-card: 0 1px 3px rgba(0,0,0,.06), 0 4px 16px rgba(108,99,255,.06);
+  --shadow-modal: 0 20px 60px rgba(0,0,0,.18);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 99px; }
+
+input, textarea, select {
+  font-family: var(--font-sans);
+}
+
+button { font-family: var(--font-sans); cursor: pointer; }
